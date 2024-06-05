@@ -1,0 +1,26 @@
+{
+	"binance":{
+		"allDetails":[
+		{
+			"name": "AGIXUSDT",
+			"pricePrecision": 5,
+			"sizePrecision": 0
+		},
+		{
+			"name": "BTCTUSD",
+			"pricePrecision": 2,
+			"sizePrecision": 5
+		},
+		{
+			"name":"BURGERUSDT",
+			"pricePrecision":4,
+			"sizePrecision":1
+		},
+		{
+			"name":"DOGEFDUSD",
+			"pricePrecision": 5,
+			"sizePrecision": 0
+		}
+		]
+	}
+} 
