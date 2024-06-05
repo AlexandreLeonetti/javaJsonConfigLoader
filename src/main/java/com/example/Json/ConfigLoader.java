@@ -25,6 +25,24 @@ public class ConfigLoader {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        
+        ObjectMapper tradeMapper = new ObjectMapper();
+        tradeMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+        try {
+        	Trades trades = tradeMapper.readValue(new File("trades.json"), Trades.class);
+        	Trades.TradeDetails tradeDetails = trades.getTradeDetailsByName("BNBUSDT");
+        	System.out.println(" we are here and tradeDetails is equal to "+ tradeDetails);
+        	if(tradeDetails != null) {
+        		System.out.println("Name of the pair is : "+ tradeDetails.getName());
+        		System.out.println("Size of the order is : "+ tradeDetails.getSize());
+        		System.out.println("Minimum price is : "+ tradeDetails.getMinPrice());
+        	}else {
+        		System.out.println("TradeDetails is null");
+        	}
+        }catch(IOException e) {
+        	e.printStackTrace();
+        }
+        
     }
 }
 

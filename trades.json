@@ -1,0 +1,18 @@
+{
+	"allTrades": [
+		{
+			"name": "BCHUSDT",
+			"size": "0.2",
+			"stop":"0.01",
+			"limit": "0.00995",
+			"minPrice":"520"
+		},
+		{
+			"name": "BNBUSDT",
+			"size": "0.25",
+			"stop": "0.01",
+			"limit": "0.00997",
+			"minPrice":"615"
+		}
+		]
+	}	
